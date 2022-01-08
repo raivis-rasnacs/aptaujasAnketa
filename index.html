@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jautājums</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="ievadiVardu()">
+    <h2 id="tavsvards"></h2>
+
+    <fieldset>
+      <legend>Kā tev patīk šī lappuse?</legend>
+      <input id="atbilde1" name="variants" type="radio" onchange="iesniedzAtbildi()">
+      <label for="atbilde1">Ļoti patīk!</label><br>
+      <input id="atbilde2" name="variants" type="radio" onchange="iesniedzAtbildi()">
+      <label for="atbilde2">Neizraisa emocijas</label><br>
+      <input id="atbilde3" name="variants" type="radio" onchange="iesniedzAtbildi()">
+      <label for="atbilde3">Nepatīk!</label><br>
+    </fieldset><br>
+    <input id="atsauksme" type="text" value="Kas tieši nepatīk? Ieraksti šeit!" style="visibility:hidden;">
+    <button id="iesniegt" onclick="alert('Atbilde iesniegta!')" style="visibility:hidden;">Iesniegt atsauksmi!</button>
+    <script src="script.js"></script>
+  </body>
+</html>
